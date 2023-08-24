@@ -1,0 +1,273 @@
+@import url("https://fonts.googleapis.com/css2?family=Font+Name&display=swap");
+
+body {
+  margin: 0;
+  text-align: center;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  color: #333;
+}
+
+.button-container {
+  margin: 20px auto;
+}
+
+.button-container button {
+  width: 190px;
+  height: 50px;
+  font-size: 23px;
+  margin: 5px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  padding: 10px 20px;
+  background: linear-gradient(135deg, #0056b3, #1f0b72);
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 35px 10px;
+  box-shadow: 0 2px 4px rgba(4, 12, 109, 0.538);
+}
+
+.button-container button:hover {
+  background: linear-gradient(135deg, #626161, #1a1919);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.553);
+}
+
+.quiz-container {
+  width: 100%;
+  height: 445px;
+  max-width: 700px;
+  font-size: 20px;
+  margin: 30px auto;
+  padding: 40px;
+  box-sizing: border-box;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+#question {
+  font-size: 17px;
+  margin-bottom: 20px;
+  text-align: left;
+}
+
+
+
+#options {
+  list-style: none;
+  padding: 0;
+}
+
+#options li {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+h1 {
+  margin-bottom: 20px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+li {
+  margin: 10px 0;
+}
+
+button {
+  padding: 10px 20px;
+  background-color: #4CAF50;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #45a049;
+}
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+#submit-btn {
+  display: flex;
+  font-size: 17px;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  box-shadow: 0 2px 4px rgba(29, 130, 76, 0.612);
+  background-image: linear-gradient(to top, #2d922b, #32953f);
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-left: 70%;
+}
+
+#submit-btn:hover {
+  background-image: linear-gradient(to top, #51b68e, #42ae83);
+  box-shadow: 0 3px 6px rgba(68, 132, 98, 0.612);
+}
+
+@keyframes bounceAnimation {
+  0%, 100% {
+      transform: translateY(0);
+  }
+  50% {
+      transform: translateY(-20px);
+  }
+}
+
+#retry-btn {
+  font-size: 17px;
+  background-color: #ff0000;
+  padding: 10px 20px;
+  border: none;
+  cursor: pointer;
+  border-radius: 3px;
+  margin-top: 200px;
+
+  animation: bounceAnimation 1s infinite;
+  /* Adicione a animação aqui */
+}
+
+#retry-btn:hover {
+  background-color: #da190b;
+}
+
+.footer-style{
+  margin-top: 80px;
+  background-color: #000000e1;
+  color: white;
+  padding: 10px;
+  text-align: center;
+  font-size: 14px;
+}
+
+/* Estilos base do footer */
+footer {
+  text-align: center;
+  padding: 10px;
+  background-color: #333;
+  color: white;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+footer p {
+  margin: 0;
+  font-size: 14px;
+}
+
+footer a {
+  color: white;
+}
+
+/* Adicione espaço embaixo do conteúdo principal */
+.content {
+  padding-bottom: 60px; /* Altura do footer + algum espaço extra */
+}
+
+
+.gg-check-o {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  transform: scale(var(--ggs,1));
+  width: 22px;
+  height: 22px;
+  border: 2px solid;
+  border-radius: 100px;
+  margin-left: 5px;
+}
+.gg-check-o::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute;
+  left: 3px;
+  top: -1px;
+  width: 6px;
+  height: 10px;
+  border-color: currentColor;
+  border-width: 0 2px 2px 0;
+  border-style: solid;
+  transform-origin: bottom left;
+  transform: rotate(45deg)
+}
+
+.gg-log-out {
+  box-sizing: border-box;
+  position: relative;
+  display: block;
+  width: 6px;
+  height: 16px;
+  border: 2px solid;
+  transform: scale(var(--ggs,1));
+  border-right: 0;
+  border-top-left-radius: 2px;
+  border-bottom-left-radius: 2px;
+  margin-left: -10px;
+  color: black;
+}
+.gg-log-out::after,
+.gg-log-out::before {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  position: absolute
+}
+.gg-log-out::after {
+  border-top: 2px solid;
+  border-left: 2px solid;
+  transform: rotate(-45deg);
+  width: 8px;
+  height: 8px;
+  left: 4px;
+  bottom: 2px
+}
+.gg-log-out::before {
+  border-radius: 3px;
+  width: 10px;
+  height: 2px;
+  background: currentColor;
+  left: 5px;
+  bottom: 5px
+}
+
+.img-esquerda {
+  position: absolute;
+  left: -1%;
+  top: 10%;
+  width: 27%;
+  height: auto;
+}
+
+.img-direita {
+  position: absolute;
+  right: 0%;
+  top: 10%;
+  width: 27%;
+  height: auto;
+}
+
+.img-esquerda3 {
+  position: absolute;
+  left: -2%;
+  top: 6%;
+  width: 30%;
+  height: 80%;
+}
+
+.correct {
+  background-color: rgba(97, 215, 97, 0.847);
+  transition: background-color 0.5s ease;
+}
+
+.incorrect {
+  background-color: rgba(203, 84, 84, 0.849);
+  transition: background-color 0.5s ease;
+}

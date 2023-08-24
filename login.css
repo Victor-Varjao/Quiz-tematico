@@ -1,0 +1,86 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    width: 100%;
+    max-width: 600px; /* Defina um valor máximo adequado para o formulário */
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.login-form {
+    text-align: center;
+    padding: 40px;
+    border: 1px solid #ccc;
+    background-color: rgba(245, 215, 106, 0.708);
+    border-radius: 10px;
+    box-shadow: 0 3px 8px rgba(4, 12, 109, 0.2);
+}
+
+
+.logo-marca {
+    position: absolute;
+    left: 7%;
+    top: 7%;
+    display: flex;
+    width: 20%;
+    height: 12%;
+}
+
+.login-form h1 {
+    font-size: 24px;
+    margin-bottom: 17px;
+    text-align: center;
+}
+
+.login-form label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-form input {
+    text-align: start;
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-form input:focus {
+    outline: none;
+    border-color: #870b0b;
+    box-shadow: 0 0 5px #d61212;
+}
+
+.loginbtn {
+    width: 100%;
+    margin: 10px;
+    padding: 10px;
+    background: linear-gradient(135deg, #d61212, #870b0b);
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+    box-shadow: 0 3px 8px rgba(4, 12, 109, 0.2);
+    transition: background-color 0.3s, box-shadow 0.3s;
+}
+
+.loginbtn:hover {
+    background: linear-gradient(135deg, #626161, #1a1919);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+}
+
+.forgot-password {
+    margin-top: 10px;
+    font-size: 14px;
+}

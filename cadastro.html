@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="imagens/favi-icon.png">
+    <link rel="stylesheet" href="cadastro.css">
+    <title>VARJAQUIZ | Cadastro</title>
+</head>
+
+<body>
+    <div class="container">
+        <div class="cadastro-form">
+            <form action="action_page.php">
+                <h1>Cadastro de Usuário</h1>
+                <p>Preencha o formulário para criar seu cadastro!</p>
+
+                <label for="nome"><b>Nome:</b></label>
+                <input type="text" placeholder="Seu nome" name="nome" id="nome" required>
+
+                <label for="email"><b>Email:</b></label>
+                <input type="text" placeholder="Insira o email" name="email" id="email" required>
+
+                <label for="psw"><b>Senha:</b></label>
+                <input type="password" placeholder="Insira a senha" name="psw" id="psw" required>
+
+                <label for="psw-repeat"><b>Nova senha:</b></label>
+                <input type="password" placeholder="Repita a senha" name="psw-repeat" id="psw-repeat" required>
+
+                <div class="escolha">
+                    <label for="genero">Mulher</label>
+                    <input type="radio" name="opcoes" id="M" value="M">
+                    <label for="genero">Homem</label>
+                    <input type="radio" name="opcoes" id="H" value="H">
+                </div>
+                <button type="button" class="registerbtn" onclick="exibirFotoPerfil()">Cadastrar</button>
+                <div class="logout-icon">
+                    <a href="index.html">
+                        <i class="gg-log-out"></i>
+                    </a>
+                </div>
+                <p>
+                    Ao se cadastrar você concorda com nossos termos e políticas. <a href="#">Termos & Privacidade</a>.
+                </p>
+                <div class="container signin">
+                    <p>Já tem uma conta? <a href="login.html"> Entre</a>.</p>
+                </div>
+            </form>
+        </div>
+        <div class="tabela-container">
+            <h2>Confira seus dados:</h2>
+            <table id="tabela" style="display: none;">
+                <tr>
+                    <th>Foto</th>
+                    <th>Nome</th>
+                    <th>Email</th>
+                    <th>Gênero</th>
+                </tr>
+                <tr>
+                    <td><img id="perfil" src="" alt="Foto de perfil" class="profile-img" style="display: none;"></td>
+                    <td id="nomeTabela"></td>
+                    <td id="emailTabela"></td>
+                    <td id="generoTabela"></td>
+                </tr>
+            </table>
+        </div>
+        <div class="logo-marca">
+            <img src="imagens/favi-icon.png" alt="logo do site">
+        </div>
+
+    </div>
+    <footer class="footer-style content">
+        <p>&copy; 2023 VarjaQuiz. Todos os direitos reservados.</p>
+    </footer>
+    <script src="cadastro.js"></script>
+</body>
+
+</html>

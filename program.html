@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <title>VARJAQUIZ | Programação</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=NomeDaFonte&display=swap" rel="stylesheet">
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/check-o.css' rel='stylesheet'>
+    <link href='https://unpkg.com/css.gg@2.0.0/icons/css/log-out.css' rel='stylesheet'>
+    <link rel="icon" type="image/x-icon" href="imagens/favi-icon.png">
+    <link rel="stylesheet" href="program.css">
+</head>
+
+<body>
+
+    <div class="button-container button">
+        <button><a href="filmes.html">Filmes</a></button>
+        <button><a href="animes.html">Animes</a></button>
+        <button><a href="jogos.html">Jogos</a></button>
+    </div>
+
+    <div class="quiz-container">
+        <div id="quiz-content">
+            <h1>Tema de Programação</h1>
+            <p id="question"></p>
+            <ul id="options">
+                <li>
+                    <input type="radio" name="option" value="1" id="option1">
+                    <label for="option1" id="option1-label"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" value="2" id="option2">
+                    <label for="option2" id="option2-label"></label>
+                </li>
+                <li>
+                    <input type="radio" name="option" value="3" id="option3">
+                    <label for="option3" id="option3-label"></label>
+                </li>
+            </ul>
+            <button id="submit-btn">
+                Responder <i class="gg-check-o"></i>
+           </button>
+            <p id="timer">
+                Tempo restante: <span id="timer-countdown">120</span> segundos
+            </p>
+        </div>
+        
+        <div class="logout-icon">
+            <a href="index.html"> 
+                <i class="gg-log-out"></i>
+            </a>
+        </div>
+
+        <div id="score-container" style="display: none;">
+            <h2>Quiz encerrado!</h2>
+            <p>Você acertou <span id="score"></span> de <span id="total-questions"></span> perguntas.</p>
+            <button id="retry-btn" style="display: none;">Tentar novamente</button>
+        </div>
+    </div>
+
+    <img class="img-esquerda3" style="width: 30%; height: 64%; margin-top: 50px; margin-left: 10px; " src="imagens/img-program.png" alt="imagem harry">
+    <img class="img-direita" src="imagens/img2-program.png" alt="imagem homem de ferro">
+
+    <footer  class="footer-style content">
+        <p>&copy; 2023 VarjaQuiz. Todos os direitos reservados.</p>
+    </footer>
+
+    <script src="program.js"></script>
+</body>
+
+</html>
